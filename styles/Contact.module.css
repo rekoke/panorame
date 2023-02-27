@@ -1,0 +1,24 @@
+.contactContainer h2{
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.formTextContainer{
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+}
+
+.formTextContainer ul{
+  list-style: none;
+  padding: 0;
+  opacity: .7;
+}
+
+.formTextContainer li{
+  margin: 10px 0;
+}

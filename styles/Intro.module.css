@@ -1,0 +1,69 @@
+.parallaxBanner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.introTextContainer{
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 20px;
+  max-width: 900px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.introTextContainerText{
+  margin-bottom: 10px;
+}
+.introTextContainerText h1{
+  font-weight: 100;
+  font-size: 35px;
+}
+
+.introTextContainerImages{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.introTextContainerImages img{
+  width: auto;
+  max-height: 70px;
+  margin: 0px 10px 0;
+}
+.introTextContainerImages img:first-child{
+  height: 50px;
+  margin-bottom: 3px;
+}
+.introTextContainerImages img:last-child{
+  max-height: 130px;
+  height: 65px;
+}
+.arrow_down{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow_down img{
+  height: 30px;
+  width: auto;
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in;
+}
+
+.arrow_down img:hover{
+  opacity: 0.8;
+}

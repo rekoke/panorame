@@ -1,0 +1,8 @@
+.customFooterContainer{
+  max-width: 900px;
+  text-align: left;
+  margin-top: 80px;
+  width: 100%;
+  font-size: 12px;
+  opacity: .5;
+}

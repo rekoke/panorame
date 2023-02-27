@@ -21,6 +21,11 @@ a {
   }
   body {
     color: white;
-    background: green;
+    background: #1a1a1a;
   }
+}
+
+textarea,
+input[type=text] {
+    font-family:Arial;
 }
