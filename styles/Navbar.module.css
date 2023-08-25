@@ -1,0 +1,47 @@
+.navbarContainer{
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 9999;
+  padding: 20px 40px;
+  background-color: transparent;
+}
+
+
+.scrolledPast{
+  background-color: #1a1a1a;
+  border-bottom: 1px solid rgb(31, 31, 31);
+}
+
+.navbarContainer .insider{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbarContainer nav{
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.navbarContainer ul{
+  list-style: none;
+  display: flex;
+}
+
+.navbarContainer ul li{
+  cursor: pointer;
+  margin-left: 3em;
+  transition: color 0.2s ease;
+  font-size: 16px;
+}
+
+.navbarContainer ul li:hover{
+  color: #ebc14b;
+}
+
+.navbarContainer img{
+  height: 70px;
+  width: auto;
+}

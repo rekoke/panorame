@@ -1,0 +1,31 @@
+.examplesContainer ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.examplesContainer li{
+  width: 50%;
+  padding: 20px;
+  width: 560px;
+  height: 393px;
+}
+
+.examplesContainer li::marker{
+  color: transparent;
+}
+
+.examplesContainer iframe{
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  transition: border 0.2s ease;
+}
+
+.examplesContainer iframe:hover{
+  border: 1px solid #f1c448;
+}

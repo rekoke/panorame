@@ -1,0 +1,24 @@
+.quickContactContainer{
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.quickContactContainer a{
+  margin-right: 15px;
+  opacity: .4;
+  height: 25px;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in;
+}
+.quickContactContainer a:hover{
+  opacity: 1;
+}
+
+.quickContactContainer img{
+  height: 100%;
+}
+
+.quickContactContainer a:first-child{
+  height: 20px
+}
