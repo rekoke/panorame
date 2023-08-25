@@ -17,7 +17,6 @@ const introInside = () => {
     </div>
   );
 };
-
 const Intro = () => {
   return (
     <div>
@@ -26,7 +25,7 @@ const Intro = () => {
           {
             image: "/villa.jpg",
             speed: -25,
-            opacity: [0.7, 0.1],
+            opacity: [0.5, 0.1],
           },
           {
             startScroll: 0,

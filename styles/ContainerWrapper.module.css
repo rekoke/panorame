@@ -1,9 +1,11 @@
 .containerWrapper{
   max-width: 1200px;
-  margin: 120px auto 0;
+  margin: 140px auto 0;
   text-align: center;
 }
-
+.containerWrapper:last-child{
+  margin-bottom: 100px;
+}
 .containerWrapper h2{
   text-align: center;
   text-transform: uppercase;

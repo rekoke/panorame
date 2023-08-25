@@ -17,7 +17,7 @@ interface INavBarLinks {
 
 export const NavBarLinks: INavBarLinks[] = [
   { name: "virtual tours", path: "virtualTours" },
-  { name: "gallery", path: "examples" },
+  { name: "gallery", path: "gallery" },
   { name: "pricing", path: "pricing" },
   { name: "contact", path: "contact" },
 ];

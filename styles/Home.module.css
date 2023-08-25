@@ -13,9 +13,34 @@
   flex: 1;
   padding: 4rem 0 2rem;
   background: #665C5C;
-  background: #dbdbdb;
+  background: #1a1a1a;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 80px;
+  position: relative;
+  border-top: 1px solid #797979;
+  position: relative;
+}
+
+.footer:after{
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #f1c448;
+  width: 40%;
+  height: 1px;
+  top: -1px;
+  animation-name: moving;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+  animation-duration: normal;
+  animation-direction: alternate;
+}
+
+
+@keyframes moving {
+  from {width:20%;}
+
+  to {width:50%;}
 }

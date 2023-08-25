@@ -12,11 +12,16 @@ const Pricing = () => {
       className={styles.pricingContainer}
     >
       <>
-        <PriceTable />
+        <div className={styles.pricingContainerTables}>
+          <PriceTable type="small" size={300} price={6000000} />
+          <PriceTable type="large" size={700} price={9000000} />
+        </div>
+        <p className={`${open.className} ${styles.discount}`}>
+          2nd year renovation has a <span>30%</span> discount
+        </p>
         <p className={`${open.className} ${styles.smallText}`}>
-          All prices are approximate, total price will be discussed upon
-          consultation. This includes property size above 700m2. If you have
-          multiple spaces we can offer you a further discount.
+          <span>*</span>Properties larger than 700㎡ or multiple
+          space/properties will be discussed upon consultation.
         </p>
       </>
     </ContainerWrapper>
