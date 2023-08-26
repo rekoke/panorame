@@ -12,7 +12,7 @@ const Pricing = () => {
     threshold: 0.5,
   });
 
-  const scroll = inView ? "" : styles.secondSlide;
+  const scroll = inView ? styles.firstSlideInView : "";
 
   return (
     <ContainerWrapper
@@ -22,10 +22,10 @@ const Pricing = () => {
       <div className={styles.pricingWrapper}>
         <div className={styles.pricingContainerTables}>
           <ul>
-            <li ref={ref}>
+            <li>
               <PriceTable type="small" size={300} price={6000000} />
             </li>
-            <li>
+            <li ref={ref}>
               <PriceTable type="large" size={700} price={9000000} />
             </li>
           </ul>

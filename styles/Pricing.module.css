@@ -80,13 +80,14 @@
   background-color: #f1c448;
   height: 2px;
   width: 50px;
-  left: 0;
+  left: 0px;
   z-index: 2;
-  transition: transform 0.4s;
+  transition: left 0.4s;
+  
 }
 
-.secondSlide.scrollBarPrices:before{
-  transform: translateX(50px);
+.firstSlideInView.scrollBarPrices:before{
+  left: 50px;
 }
 
 .pricingWrapper{
