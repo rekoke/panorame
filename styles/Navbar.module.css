@@ -1,9 +1,9 @@
 .navbarContainer{
   width: 100%;
-  position: fixed;
+  position: absolute;
   left: 0;
   z-index: 9999;
-  padding: 20px 40px;
+  padding: 20px;
   background-color: transparent;
 }
 
@@ -44,4 +44,24 @@
 .navbarContainer img{
   height: 70px;
   width: auto;
+}
+
+nav.navbarDesktop{
+  display: none;
+}
+nav.navbarMobile{
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  nav.navbarDesktop{
+    display: flex;
+  }
+  nav.navbarMobile{
+    display: none;
+  }
+  .navbarContainer{
+    position: fixed;
+    padding: 20px 40px;
+  }
 }

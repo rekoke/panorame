@@ -5,21 +5,16 @@
   flex-direction: column;
   padding-top: 20px;
   padding-bottom: 20px;
+  width: calc(100vw - 40px);
+  transition: transform 0.5s;
 }
 
-.priceTableContainer:first-child{
-  padding-right: 80px;
-  border-right: 1px solid #797979;
-  position: relative;
+.priceTableContainer ul{
+  overflow-x: scroll;
 }
-.priceTableContainer:first-child:after{
-  content: '';
-  display: block;
-  position: absolute;
-  right: -1px;
-  height: 69%;
-  width: 1px;
-  background-color: #f1c448;
+
+ul:first-child .priceTableContainer{
+  padding-right: 0px;
 }
 
 
@@ -37,4 +32,25 @@
   color: #797979;
   font-size: 18px;
   font-weight: normal;
+}
+
+@media only screen and (min-width: 768px) {
+  .priceTableContainer{
+    width: auto;
+  }
+  li:first-child .priceTableContainer{
+    padding-right: 80px;
+    border-right: 1px solid #797979;
+    position: relative;
+    margin-right: 80px;
+  }
+  li:first-child .priceTableContainer:after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: -1px;
+    height: 69%;
+    width: 1px;
+    background-color: #f1c448;
+  }
 }

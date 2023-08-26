@@ -8,7 +8,7 @@
 
 .examplesContainer li{
   width: 50%;
-  padding: 20px;
+  padding: 0px 0px 40px 0px;
   width: 560px;
   height: 393px;
 }
@@ -28,4 +28,10 @@
 
 .examplesContainer iframe:hover{
   border: 1px solid #f1c448;
+}
+
+@media only screen and (min-width: 768px) {
+  .examplesContainer li{
+   padding: 20px;
+  }
 }

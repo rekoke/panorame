@@ -13,8 +13,14 @@ const Pricing = () => {
     >
       <>
         <div className={styles.pricingContainerTables}>
-          <PriceTable type="small" size={300} price={6000000} />
-          <PriceTable type="large" size={700} price={9000000} />
+          <ul>
+            <li>
+              <PriceTable type="small" size={300} price={6000000} />
+            </li>
+            <li>
+              <PriceTable type="large" size={700} price={9000000} />
+            </li>
+          </ul>
         </div>
         <p className={`${open.className} ${styles.discount}`}>
           2nd year renovation has a <span>30%</span> discount
