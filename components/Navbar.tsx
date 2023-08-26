@@ -32,7 +32,7 @@ const Navbar = () => {
         <div>
           <Image src={mainLogo} alt="Main logo" height={80} />
         </div>
-        <nav>
+        <nav className={styles.navbarDesktop}>
           <ul>
             {NavBarLinks.map((link, index) => {
               return (
@@ -50,6 +50,7 @@ const Navbar = () => {
             })}
           </ul>
         </nav>
+        <nav className={styles.navbarMobile}></nav>
       </div>
     </div>
   );

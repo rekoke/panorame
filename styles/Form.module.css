@@ -3,8 +3,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 50%;
+  width: 100%;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .formContainer >div{
@@ -46,7 +47,7 @@
 .formContainer textarea {
   background: #1a1a1a;
   border-radius: 3px;
-  border: 1px solid white;
+  border: 1px solid #797979;
   padding: 10px;
   resize: none;
 }
@@ -67,7 +68,7 @@
   height: 100%;
   background: #1a1a1a;
   border-radius: 3px;
-  border: 1px solid white;
+  border: 1px solid #797979;
   padding: 10px;
 }
 
@@ -98,4 +99,11 @@
   bottom: -5px;
   color: #f1c448;
   opacity: .5;
+}
+
+@media only screen and (min-width: 768px) {
+  .formContainer{
+    width: 50%;
+    margin-bottom: 0px;
+  }
 }

@@ -10,7 +10,7 @@ const Contact = () => {
     <div id="contact" className={styles.contactContainer}>
       <h2>Contact us</h2>
       <div className={styles.formTextContainer}>
-        <div>
+        <div className={styles.quickInfo}>
           <ul className={open.className}>
             <li>Tel: +62 662 123 089</li>
             <li>Email: panoramebali@gmail.com</li>

@@ -17,6 +17,7 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
 }
 
 .introTextContainerText{
@@ -66,4 +67,10 @@
 
 .arrow_down img:hover{
   opacity: 0.8;
+}
+
+@media only screen and (min-width: 768px) {
+  .introTextContainer{
+    padding: 0;
+  }
 }

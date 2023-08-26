@@ -2,6 +2,9 @@
   width: 200px;
   display: flex;
   align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .quickContactContainer a{
@@ -21,4 +24,12 @@
 
 .quickContactContainer a:first-child{
   height: 20px
+}
+
+@media only screen and (min-width: 768px) {
+  .quickContactContainer{
+    justify-content: flex-start;
+    width: auto;
+    margin-top: -25px;
+  }
 }
