@@ -10,7 +10,7 @@ export const MatterportLinks: IMatterportLinks[] = [
   { url: "https://my.matterport.com/show/?m=U2PwbfTthfq", key: "4" },
 ];
 
-interface INavBarLinks {
+export interface INavBarLinks {
   name: string;
   path: string;
 }

@@ -1,11 +1,11 @@
+import { useState, useEffect } from "react";
 import Image from "next/image";
+import styles from "../styles/Navbar.module.css";
 import mainLogo from "../public/mainLogo_white.png";
 import { NavBarLinks } from "../store";
-import styles from "../styles/Navbar.module.css";
 import { Link } from "react-scroll";
-import { useState } from "react";
+import { Sidebar } from "./Sidebar";
 
-import { useEffect } from "react";
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
@@ -50,7 +50,9 @@ const Navbar = () => {
             })}
           </ul>
         </nav>
-        <nav className={styles.navbarMobile}></nav>
+        <nav className={styles.navbarMobile}>
+          <Sidebar />
+        </nav>
       </div>
     </div>
   );
