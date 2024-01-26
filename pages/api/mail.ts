@@ -1,14 +1,12 @@
-// pages/api/mail.ts
 import type { NextApiRequest, NextApiResponse } from "next";
-import sendgrid from "@sendgrid/mail";
+import { EmailTemplate } from "../../components/email-template";
+import { Resend } from "resend";
 
-sendgrid.setApiKey(process.env.SENDGRID_API_KEY as string);
-type Data = {
-  message: string;
-};
+const resend = new Resend(process.env.RESEND_API_KEY);
+
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>
+  res: NextApiResponse
 ) {
   if (req.method === "POST") {
     const {
@@ -16,16 +14,14 @@ export default async function handler(
       email,
       message,
     }: { name: string; email: string; message: string } = req.body;
-    const msg = `Name: ${name}\r\n Email: ${email}\r\n Message: ${message}`;
     const data = {
       to: "rekoke92@gmail.com",
-      from: "rekoke92@gmail.com",
-      subject: `${name.toUpperCase()} sent you a message from Panorame Contact Form`,
-      text: `Email => ${email}`,
-      html: msg.replace(/\r\n/g, "<br>"),
+      from: "pandry@panoramebali.com",
+      subject: `${name.toUpperCase()} sent you a message from PanorameBali Contact Form`,
+      react: EmailTemplate({ name: name, email: email, message: message }),
     };
     try {
-      await sendgrid.send(data);
+      await resend.emails.send(data);
       res.status(200).json({ message: "Your message was sent successfully." });
     } catch (err) {
       res
