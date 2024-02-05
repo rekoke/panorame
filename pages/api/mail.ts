@@ -15,8 +15,8 @@ export default async function handler(
       message,
     }: { name: string; email: string; message: string } = req.body;
     const data = {
-      to: "rekoke92@gmail.com",
-      from: "pandry@panoramebali.com",
+      to: "diego.marchant@gmail.com",
+      from: "form@panoramebali.com",
       subject: `${name.toUpperCase()} sent you a message from PanorameBali Contact Form`,
       react: EmailTemplate({ name: name, email: email, message: message }),
     };

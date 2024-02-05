@@ -1,4 +1,3 @@
-import { useState } from "react";
 import PriceTable from "./priceTable/PriceTable";
 import styles from "../styles/Pricing.module.css";
 import { Open_Sans } from "@next/font/google";
@@ -37,8 +36,8 @@ const Pricing = () => {
           2nd year renovation has a <span>30%</span> discount
         </p>
         <p className={`${open.className} ${styles.smallText}`}>
-          <span>*</span>Properties larger than 700㎡ or multiple
-          space/properties will be discussed upon consultation.
+          Properties larger than 700㎡ or multiple space/properties will be
+          discussed upon consultation.
         </p>
       </div>
     </ContainerWrapper>

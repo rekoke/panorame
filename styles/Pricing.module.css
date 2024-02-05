@@ -1,6 +1,7 @@
 .smallText{
-  font-size: 14px;
+  font-size: 15px;
   color: #797979;
+  margin-top: -5px;
 }
 .smallText span{
   color: red

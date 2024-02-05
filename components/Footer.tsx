@@ -5,7 +5,10 @@ const open = Open_Sans({ subsets: ["latin"] });
 const Footer = () => {
   return (
     <div className={`${style.customFooterContainer} ${open.className}`}>
-      © 2023 made by Koke Designs
+      © 2023 made by{" "}
+      <a href="https://www.alvarokoke.xyz" target="_blank" rel="noreferrer">
+        alvarokoke
+      </a>
     </div>
   );
 };

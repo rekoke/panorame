@@ -7,7 +7,7 @@ const introInside = () => {
   return (
     <div className={styles.introTextContainer}>
       <div className={styles.introTextContainerText}>
-        <h1>The augmented virtual reality tour your villa deserves</h1>
+        <h1>The best virtual reality tour for your villa</h1>
       </div>
       <div className={styles.introTextContainerImages}>
         <Image src="/mp_logo.png" height={100} width={100} alt="matterport" />
